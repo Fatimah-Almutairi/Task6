@@ -25,11 +25,9 @@ const timerCount =() => {
         timer.innerHTML = `${min}:${sec}`;
     }
 };
-// stop and clear the timer
 const stopClock = () => {
     clearInterval(timerId);
 };
-// Start the timer
 start.addEventListener("click", function () {
     if (timerOut) {
         initClock();
